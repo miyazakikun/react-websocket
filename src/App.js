@@ -26,7 +26,7 @@ class App extends Component {
     this.setState({ localresponse: data });
     if (this.state.lengthbefore !== data.length) {
       this.setState({ lengthbefore: data.length, notif: true });
-      ToastsStore.success("Hey, data changed");
+      ToastsStore.success("Alert New User");
     }else{
       this.setState({ lengthbefore: data.length, notif: false });
     }
